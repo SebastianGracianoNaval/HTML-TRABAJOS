@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+
+
+
+<body>
+  <!-- Navbar -->
+  <header class="text-center py-5 mt-navbar"></header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Mi Portafolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Acerca de mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  <!-- Encabezado -->
+  <header class="text-center py-5">
+    <img src="Imagenes/img4.png" alt="Foto de perfil" class="rounded-circle mb-3">
+    <h1 class="mb-0">Sebastian Graciano</h1>
+    <p class="lead">Backend Developer</p>
+  </header>
+
+  <!-- Portfolio -->
+<section id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2>Portfolio</h2>
+          <hr class="star-primary">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 portfolio-item">
+          <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+            <div class="caption">
+              <div class="caption-content">
+                <i class="fa fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img src="Imagenes/img1.png" class="img-responsive" alt="Project 1">
+          </a>
+        </div>
+        <div class="col-sm-4 portfolio-item">
+          <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+            <div class="caption">
+              <div class="caption-content">
+                <i class="fa fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img src="Imagenes/img1.png" class="img-responsive" alt="Project 2">
+          </a>
+        </div>
+        <div class="col-sm-4 portfolio-item">
+          <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+            <div class="caption">
+              <div class="caption-content">
+                <i class="fa fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img src="Imagenes/img1.png" class="img-responsive" alt="Project 3">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Acerca de mi -->
+<section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Acerca de mí</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="lead">Soy Sebastian Graciano, un apasionado desarrollador backend con 3 años de experiencia en la creación de software. Me especializo en Python, Java, HTML, CSS, JavaScript y frameworks populares como Bootstrap y React. Mi objetivo es crear software y aplicaciones web que no solo sean estéticamente atractivos, sino también altamente funcionales y fáciles de usar para el usuario final.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+ <!-- Contacto -->
+<section id="contact" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Contacto</h2>
+          <h3 class="section-subheading text-muted">¿Quieres ponerte en contacto conmigo?</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <form id="contactForm" name="sentMessage" novalidate="novalidate">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input class="form-control" id="name" type="text" placeholder="Tu nombre *" required="required" data-validation-required-message="Por favor ingresa tu nombre.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="email" type="email" placeholder="Tu correo electrónico *" required="required" data-validation-required-message="Por favor ingresa tu correo electrónico.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="phone" type="tel" placeholder="Tu número de teléfono *" required="required" data-validation-required-message="Por favor ingresa tu número de teléfono.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <textarea class="form-control" id="message" placeholder="Tu mensaje *" required="required" data-validation-required-message="Por favor ingresa un mensaje."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Enviar mensaje</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <p class="text-muted mb-0">También puedes encontrarnos en:</p>
+          <ul class="list-inline mb-5">
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-facebook-f fa-2x"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-twitter fa-2x"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-linkedin-in fa-2x"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- Pie de página -->
+  <footer class="bg-dark py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <ul class="list-inline mb-3">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-twitter fa-2x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-facebook-f fa-2x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-instagram fa-2x"></i>
+                </a>
+              </li>
+            </ul>
+            <p class="text-muted small mb-0">&copy; Tu nombre 2023. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>

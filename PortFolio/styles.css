@@ -1,0 +1,150 @@
+#contact {
+    margin-bottom: 50px;
+  }
+
+  .portfolio-item {
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+/* Colores */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+}
+
+
+textarea {
+    background-color: #ffffff;
+  }
+  
+
+/* Estilos generales */
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--dark-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--dark-color);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+/* Encabezado */
+header {
+  background-color: var(--light-color);
+}
+
+header h1 {
+  font-size: 4rem;
+}
+
+header p {
+  font-size: 2rem;
+}
+
+/* Portfolio */
+#portfolio {
+  background-color: var(--light-color);
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.caption-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.portfolio-item:hover .caption {
+  opacity: 1;
+}
+
+/* Acerca de mí */
+#about {
+  background-color: var(--light-color);
+}
+
+#about h3 {
+  font-size: 2.5rem;
+}
+
+/* Contacto */
+#contact {
+  background-color: var(--secondary-color);
+}
+
+#contact h3 {
+  font-size: 2.5rem;
+}
+
+#contactForm input[type="text"],
+#contactForm textarea {
+  background-color: white; /* Cambiar el valor a blanco */
+  border: none;
+  border-bottom: 2px solid var(--light-color);
+  color: var(--dark-color);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+}
+
+
+#contactForm input[type="text"]:focus,
+#contactForm textarea:focus {
+  border-bottom-color: var(--primary-color);
+  outline: none;
+}
+
+section {
+  padding-top: 100px; /* Esta es la altura del Navbar */
+}
+
+
+#contactForm button[type="submit"] {
+    background-color: #343a40;
+    color: var(--light-color);
+    border: none;
+    border-radius: 25px;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+  #contactForm button[type="submit"]:hover {
+    background-color: #6c757d;
+  }
+  
